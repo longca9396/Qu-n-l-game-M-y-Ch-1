@@ -1,4 +1,4 @@
-name: Máy Chủ 1 
+name: Huan
 on: Máy Chủ 1 
   issues:
     types: [opened]
