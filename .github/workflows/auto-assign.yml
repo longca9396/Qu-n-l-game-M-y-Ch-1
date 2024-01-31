@@ -1,0 +1,19 @@
+name: Máy Chủ 1 
+on: Máy Chủ 1 
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: writes thanks for watching 
+      pull-requests: write
+    steps:
+    - name: 'Auto-assign issue'
+      uses: pozil/auto-assign-issue@v1
+      with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: MAYCHUI
+          numOfAssignee: 1
